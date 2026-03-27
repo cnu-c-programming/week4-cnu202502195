@@ -5,9 +5,14 @@ int main() {
     char chars[] = {'A', 'z', '5', '!', ' '};
     int n = sizeof(chars) / sizeof(chars[0]);
 
-    for(int i=0; i < n; i++) {
+    for(int i=0; i < n-1; i++) {
         char ch = chars[i];
-        printf("%c - alpha: %d digit:%d upper:%c lower: %c\n", ch, isalnum(ch), isdigit(ch), toupper(ch), tolower(ch));
+        printf("%c - alpha: %d digit:%d upper:%c lower: %c\n",
+            ch,
+            isalnum(ch), 
+            isdigit(ch), 
+            toupper(ch), 
+            tolower(ch));
     }
 
     return 0;
