@@ -9,5 +9,6 @@ int main() {
     int var3 = abs(var1);
 
     printf("%d %f %d\n", var1, var2, var3);
+    
     return 0;
 }
